@@ -7,6 +7,6 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 10.times do |item|
-  user = User.create(email: "safsfsdf@qq.com", name: "lishaohua#{item}")
+  user = User.create(email: "safsfsdf#{item}@qq.com", name: "lishaohua0", password: "11111111")
   blog = Blog.create(title: "first blog", content: "first blog test", user: user)
 end

@@ -22,7 +22,11 @@ gem 'bcrypt', '~> 3.1.7'
 # Use ActiveModelSerializers to serialize JSON responses
 gem 'active_model_serializers', '~> 0.10.0.rc2'
 
-# gem 'jwt'
+gem 'jwt'
+# gem 'active_type' not work well in rails5, hack it
+gem 'pry'
+gem 'better_errors'
+gem 'binding_of_caller'
 
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 # gem 'rack-cors'
