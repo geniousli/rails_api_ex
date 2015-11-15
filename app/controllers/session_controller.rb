@@ -3,9 +3,9 @@ class SessionController < ApplicationController
   skip_before_action :auth_user_token!, only: :create
 
   def create
-    signin = User.find_by_name(session_params[:name])
+    signin = User.find_by_email(session_params[:email])
     if signin && signin.authenticate(session_params[:password])
-      render json: {name: signin.name, token: signin.encode_user}
+      render json: {email: signin.name, token: signin.encode_user}
     else
       render json: {state: "failed", error: "error"}
     end
@@ -20,8 +20,6 @@ class SessionController < ApplicationController
   private
 
   def session_params
-    # params.require(:user).permit(:email, :password)
-    # params.permit!
-    {name: "lishaohua0", password: "11111111"}
+    params.require(:user).permit(:email, :password)
   end
 end

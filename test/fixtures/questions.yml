@@ -3,9 +3,9 @@
 one:
   title: MyString
   content: MyString
-  referencce: 
+  user_id: 1
 
 two:
   title: MyString
   content: MyString
-  referencce: 
+  user_id: 1

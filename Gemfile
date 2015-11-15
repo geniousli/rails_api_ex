@@ -27,6 +27,9 @@ gem 'jwt'
 gem 'pry'
 gem 'better_errors'
 gem 'binding_of_caller'
+# gem 'kaminari'
+# gem 'wisper', '2.0.0.rc1'
+# gem 'public_activity'
 
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 # gem 'rack-cors'

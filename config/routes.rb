@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
 
+  resources :questions do
+    resources :answers, shallow: true
+  end
+
   resources :blogs, :users
 
   post '/signin', to: "session#create"

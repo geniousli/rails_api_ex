@@ -9,15 +9,10 @@ class ApplicationController < ActionController::API
   def auth_user_token!
     user = User.decode_token(request.headers.env["HTTP_HTTP_AUTHORIZATION"])
     if user
-      self.current_user = user
+      @current_user = user
     else
       raise "user not login"
     end
-  end
-
-
-  def current_user=(user)
-    @current_user = user
   end
 
   def current_user
