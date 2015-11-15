@@ -4,7 +4,7 @@ Rails.application.routes.draw do
     resources :answers, shallow: true
   end
 
-  resources :blogs, :users
+  resources :users
 
   post '/signin', to: "session#create"
   delete '/logout', to: "session#destroy"

@@ -1,7 +1,6 @@
 require 'jwt'
 class User < ActiveRecord::Base
 
-  has_many :blogs
   has_many :answers
   has_many :questions
 
