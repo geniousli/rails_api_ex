@@ -1,0 +1,15 @@
+  curl -X POST -H "Content-Type: application/json" http://127.0.0.1:3000/signin
+
+
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGlzaGFvaHVhMCIsImVtYWlsIjoic2Fmc2ZzZGZAcXEuY29tIn0.i_2FycDwlsnMCgQM5Awle4hu6Ug5oypM1SunjsiGrp8
+
+  curl -X POST -H "Content-Type: application/json" -H "HTTP_AUTHORIZATION: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGlzaGFvaHVhMCIsImVtYWlsIjoic2Fmc2ZzZGZAcXEuY29tIn0.i_2FycDwlsnMCgQM5Awle4hu6Ug5oypM1SunjsiGrp8" http://localhost:3000/questions -d '{"question": {"content":"nothing is here", "title": "ok"}}'
+
+  curl -X GET -H "Content-Type: application/json" -H "HTTP_AUTHORIZATION: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGlzaGFvaHVhMCIsImVtYWlsIjoic2Fmc2ZzZGZAcXEuY29tIn0.i_2FycDwlsnMCgQM5Awle4hu6Ug5oypM1SunjsiGrp8" http://localhost:3000/questions
+
+    curl -X POST -H "Content-Type: application/json" -H "HTTP_AUTHORIZATION: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoibGlzaGFvaHVhMCIsImVtYWlsIjoic2Fmc2ZzZGZAcXEuY29tIn0.i_2FycDwlsnMCgQM5Awle4hu6Ug5oypM1SunjsiGrp8" http://localhost:3000/questions/1/answers -d '{"answer": {"content":"you are right"}}'
+
+
+
+
+curl -X POST -H "Content-Type: application/json"  http://localhost:3000/signin -d '{"user": {"email":"lishaohua0@qq.com", "password": "11111111"}}'
